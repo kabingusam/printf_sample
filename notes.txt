@@ -1,0 +1,9 @@
+Prototype of printf() function is:  int printf( const char *format , ...)
+Format: This is a string that contains a text to be written to stdout.
+Ellipses:indicates the variable number of arguments depending upon the format string.
+
+va_list vaList;  //define the argument list (vaList)
+int (*f)(va_list); //our typedef
+if(format = NULL)
+return(-1);
+va_start(vaList, format); //start the argumemt list
